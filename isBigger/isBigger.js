@@ -61,6 +61,9 @@ function isBigger(a, b) {
 	if (a>b){
 		return false
 	}
+	else if (a<b) {
+		return true
+	}
 	else{
 		return 0
 	}
