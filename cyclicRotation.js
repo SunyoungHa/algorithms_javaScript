@@ -18,22 +18,22 @@
 // .pop() - removes and returns the last element of the array 
 // .unshift()  adds elements to the start of the array 
 
-function cyclicRotation(arr, rotation){
-    var i = 0
-    while (i<rotation){
-        var popped = arr.pop()
-        var unshifted = arr.unshift(popped)
-        i++
-    }
-    return arr
-};
-
-// for (i=0; i<rotation;i++){
-//     var popped = arr.pop()
-//     var unshifted = arr.unshift(popped)
-//  }
-//   return arr
+// function cyclicRotation(arr, rotation){
+//     var i = 0
+//     while (i<rotation){
+//         var popped = arr.pop()
+//         var unshifted = arr.unshift(popped)
+//         i++
+//     }
+//     return arr
 // };
+
+for (i=0; i<rotation;i++){
+    var popped = arr.pop()
+    var unshifted = arr.unshift(popped)
+ }
+  return arr
+};
 
 
 var a = cyclicRotation([3, 8, 9, 7, 6],1)
