@@ -43,7 +43,7 @@ console.log(result) // "ghimmnorstyy"
 
 
 function alphabetSoup(str) {
-	var arr = str.split('');
+	var splited = str.split('');
 	var sorted = arr.sort();
 	var joined = sorted.join('');
 	return joined.trim()

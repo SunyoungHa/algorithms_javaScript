@@ -14,6 +14,22 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
+
+// .pop() - removes and returns the last element of the array 
+// .unshift()  adds elements to the start of the array 
+
 function cyclicRotation(arr, rotation){
-    //Your code here...
-}
+    var i = 0
+    while (i<rotation){
+        var popped = arr.pop()
+        var unshifted = arr.unshift(popped)
+        i++
+    }
+    return arr
+};
+
+
+
+var a = cyclicRotation([3, 8, 9, 7, 6],1)
+
+console.log(a)
