@@ -12,6 +12,9 @@ Hint: Check out trim() method at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 */
 
+// input: String
+// output: string whose letters are alphabetical order
+
 /**
 Examples:
 
@@ -32,8 +35,30 @@ var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
 **/
+// //.split()- input string / output array 
+// .sort() - input array / output array 
+// .join() - input array / output string 
+// .trim() - input string / output string 
+
+
 
 function alphabetSoup(str) {
-	//Your code here
-	
-}
+	var arr = str.split('');
+	var sorted = arr.sort();
+	var joined = sorted.join('');
+	return joined.trim()
+  }
+  
+  
+  
+  var result1 = alphabetSoup("hello");
+  var result2 = alphabetSoup("");
+  var result3 = alphabetSoup("my string");
+  var result4 = alphabetSoup("my string oh my");
+  
+  console.log(result1)
+  console.log(result2)
+  console.log(result3)
+  console.log(result4)
+
+  
