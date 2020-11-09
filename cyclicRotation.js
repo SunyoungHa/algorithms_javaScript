@@ -28,6 +28,12 @@ function cyclicRotation(arr, rotation){
     return arr
 };
 
+// for (i=0; i<rotation;i++){
+//     var popped = arr.pop()
+//     var unshifted = arr.unshift(popped)
+//  }
+//   return arr
+// };
 
 
 var a = cyclicRotation([3, 8, 9, 7, 6],1)
