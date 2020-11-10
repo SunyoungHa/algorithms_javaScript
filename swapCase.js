@@ -29,6 +29,27 @@ console.log(result) // "oH, hELLO!!"
 
 **/
 
+
 function swapCase(str) {
-	// Your code
-}
+	var word = '';
+	for (var i=0;i<str.length;i++){
+	  if(str[i] === str[i].toUpperCase()){
+		word += str[i].toLowerCase()
+	  } else {
+		word += str[i].toUpperCase()
+	  }
+	}   
+	return word
+  }
+	
+	
+  var result = swapCase("Hello World")
+  console.log(result) // "hELLO wORLD"
+  
+  var result = swapCase("");
+  console.log(result) // ""
+  
+  Bonus:
+  var result = swapCase("Oh, Hello!!");
+  console.log(result) // "oH, hELLO!!"
+	
