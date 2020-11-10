@@ -4,6 +4,7 @@
 
 //Your response should be a number.
 
+
 //Here are some helpful links:
 
 //String.split() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
@@ -18,8 +19,35 @@
 // findLongestWord("What is the average airspeed velocity of an unladen swallow") should return 8.
 // findLongestWord("What if we try a super-long word such as otorhinolaryngology") should return 19.
 
+// /  input:string
+//  output : number
+ 
 
 function findLongestWord(str) {
-  //your code here
+  var splitted = str.split(' ');
+  var word = 0;
+  for(var i = 0; i < splitted.length; i++){
+    if(splitted[i].length > word){
+    word = splitted[i].length;
+     }
+  }
+  return word;
 }
+
+
+var result1 = findLongestWord("The quick brown fox jumped over the lazy dog");
+var result2 = findLongestWord("The quick brown fox jumped over the lazy dog")
+var result3 = findLongestWord("May the force be with you") 
+var result4 = findLongestWord("The quick brown fox jumped over the lazy dog") 
+var result5 = findLongestWord("Google do a barrel roll")
+var result6 = findLongestWord("What is the average airspeed velocity of an unladen swallow") 
+var result7 = findLongestWord("What if we try a super-long word such as otorhinolaryngology") 
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);
+console.log(result5);
+console.log(result6);
+console.log(result7);
 
