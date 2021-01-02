@@ -18,6 +18,6 @@ function factorializeIt(num) {
     return num;
 
 }
-
+factorializeIt(5)
 var result = factorializeIt(5);
 console.log(result)
