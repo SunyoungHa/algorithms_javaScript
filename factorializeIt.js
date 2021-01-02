@@ -20,3 +20,5 @@ function factorializeIt(num) {
 }
 var result = factorializeIt(5);
 console.log(result)
+
+// test
