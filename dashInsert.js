@@ -25,22 +25,23 @@ console.log(result) // "1-3"
 
 **/
 
-function dashInsert(str) {
-    // Your code
-    var charNum = str.toString();
-    for (var i = 1; i < charNum.length; i++)
+function dashInsert(num) {
+var str = '';
+var numStr = num.toString()
+for (var i = 0; i < numStr.length-1; i++) {
+
+  if(numStr[i]%2===1){
+    str += numStr[i] + '-';
+  } else {
+    str += numStr[i];
+  }
+}
+str += numStr[numStr.length-1];
+
+return str;
+
 }
 
-charNum = str.toString();
-String result = "";
 
-for (int i = 1; i < numbers.length; i++) {
-    int value1 = Character.getNumericValue(numbers[i - 1]);
-    int value2 = Character.getNumericValue(numbers[i]);
-    result += value1;
-    if (value1 % 2 != 0 && value2 % 2 != 0) {
-        result += "-";
-    }
-}
-result += numbers[numbers.length - 1];
-System.out.println(result);
+var result = dashInsert(233777)
+console.log(result);
