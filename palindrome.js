@@ -25,7 +25,13 @@
 //palindrome("1 eye for of 1 eye.") should return false.
 //palindrome("0_0 (: /-\ :) 0-0") should return true.
 
+
 function palindrome(str) {
-	//your code here
+    var re = /[\W_]/g;
+    var lowerStr = str.toLowerCase().replace(re, '');
+    var reverseStr = lowerStr.split('').reverse().join('');
+    return lowerStr === reverseStr;
 }
 
+var result = palindrome("1 eye for of 1 eye.");
+console.log(result)
