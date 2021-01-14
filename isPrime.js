@@ -32,5 +32,18 @@ console.log(result) // false
 **/
 
 function isPrime(num) {
-	// Your code
+  if(num===1) {
+    return false
+  }
+  else if (num === 2) {
+    return true
+  }
+  
+  for(var i = 3; i < num-1; i++)
+    if(num % i === 0) {
+      return false
+    }
+   return true
 }
+var result = isPrime(2^16)
+console.log(result) // false
