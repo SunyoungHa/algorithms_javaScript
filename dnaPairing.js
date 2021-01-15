@@ -11,10 +11,26 @@
 //The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
 function pairElement(str) {
-  //your code here
-}
+    dnaStr = []
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] === "G") {
+            dnaStr.push(["G", "C"])
+        } else if (str[i] === "C") {
+            dnaStr.push(["C", "G", ])
+        } else if (str[i] === "T") {
+            dnaStr.push(["T", "A", ])
+        } else if (str[i] === "A") {
+            dnaStr.push(["A", "T", ])
+        } else {
+            return false
+        }
+    }
+    return dnaStr
 
-pairElement("GCG");
+};
+
+var result = pairElement("ATCGA");
+console.log(result)
 
 //TEST CASES
 //pairElement("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]].
